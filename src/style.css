@@ -1,0 +1,374 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/bgd.jpg);
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  background-color: rgb(255, 57, 57);
+  border-bottom: 2px solid black;
+  justify-content: space-around;
+  align-items: center;
+}
+.header div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.logoP {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.logoP a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+.logoP img {
+  height: 60px;
+}
+.pagesMenu {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  align-items: center;
+  justify-content: center;
+}
+.pagesMenu a {
+  transition-duration: 400ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.pagesMenu a:hover {
+  transition-duration: 400ms;
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.184);
+}
+.pagesMenu img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 4px;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: white;
+  height: 35px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.searchInput {
+  width: 260px;
+  height: 30px;
+  outline: none;
+  border: none;
+}
+.searchButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: url("../img/loupe.png");
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.pokemons {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.card {
+  transition-duration: 400ms;
+  width: 290px;
+  height: 290px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.726);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card:hover {
+  transition: 400ms;
+  box-shadow: 1px 1px 20px black;
+  width: 320px;
+  height: 320px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.titleCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(255, 57, 57);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: white;
+}
+.card img {
+  width: 60%;
+  margin-top: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  margin-top: 170px;
+  width: 100%;
+}
+.cardInfoContainerPC {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+  width: 750px;
+}
+.cardInfoContainerMovil {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid black;
+  width: 95%;
+}
+.cardInfoContent {
+  display: flex;
+  flex-direction: column;
+}
+.cardInfoHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 57, 57);
+  color: white;
+  height: 50px;
+}
+.cardInfoHeader h1 {
+  margin-left: 10px;
+}
+.cardInfoHeader input {
+  transition-duration: 400ms;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cardInfoHeader input:hover {
+  transition-duration: 400ms;
+  background-color: rgba(255, 255, 255, 0.164);
+}
+.cardInfoResume {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 57, 57, 0.308);
+}
+.cardInfoResume img {
+  width: 200px;
+  height: 200px;
+}
+.cardInfoDetailsPC {
+  width: 60%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.cardInfoDetailsMovil {
+  display: flex;
+  flex-flow: column wrap;
+}
+.detailsType {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.detailsType p {
+  width: 65px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.infoPokemon {
+  text-align: justify;
+  padding: 10px;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardInfoFeatures {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.featuresPoke {
+  width: 50%;
+  border-right: 1px solid rgba(255, 57, 57, 0.308);
+}
+.featuresPoke div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.featuresPoke p {
+  margin-left: 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+}
+.featuresPoke h5 {
+  margin-left: 5px;
+}
+.evolutionsPoke {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.evolutionsPoke div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.evolutionsPoke img {
+  width: 100px;
+  height: 100px;
+}
+.pokeId {
+  border: 1px solid black;
+  color: rgb(255, 57, 57);
+}
+.typeGrass {
+  background-color: #78c850;
+  color: white;
+  font-weight: bold;
+}
+.typePoison {
+  background-color: #a040a0;
+  color: white;
+}
+.typeNormal {
+  background-color: #a8a878;
+  color: white;
+}
+.typeFire {
+  background-color: #f08030;
+  color: white;
+}
+.typeWater {
+  background-color: #6890f0;
+  color: white;
+}
+.typeElectric {
+  background-color: #f8d030;
+  color: white;
+}
+.typeIce {
+  background-color: #98d8d8;
+  color: white;
+}
+.typeFighting {
+  background-color: #c03028;
+  color: white;
+}
+.typeGround {
+  background-color: #e0c068;
+  color: white;
+}
+.typeFlying {
+  background-color: #a890f0;
+  color: white;
+}
+.typePsychic {
+  background-color: #f85888;
+  color: white;
+}
+.typeBug {
+  background-color: #a8b820;
+  color: white;
+}
+.typeRock {
+  background-color: #b8a038;
+  color: white;
+}
+.typeGhost {
+  background-color: #705898;
+  color: white;
+}
+.typeDark {
+  background-color: #705848;
+  color: white;
+}
+.typeDragon {
+  background-color: #7038f8;
+  color: white;
+}
+.typeSteel {
+  background-color: #b8b8d0;
+  color: white;
+}
+.typeFairy {
+  background-color: #f0b6b0;
+  color: white;
+}
